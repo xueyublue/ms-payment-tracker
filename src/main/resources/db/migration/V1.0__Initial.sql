@@ -1,10 +1,15 @@
-CREATE TABLE bank_account (
+CREATE TABLE payment_tracker (
 	id bigserial NOT NULL,
-	account_number varchar(255) NOT NULL,
-	account_status varchar(255) NULL,
-	balance numeric(19, 2) NULL,
-	created_on timestamp NULL,
-	updated_on timestamp NULL,
-	CONSTRAINT bank_account_pkey PRIMARY KEY (id),
-	CONSTRAINT uk_mb8kv2x9143o96jgxbv6mahcq UNIQUE (account_number)
+	txn_amount numeric(19, 2) NULL,
+	txn_date timestamp NULL,
+	category varchar(255) NULL,
+    store varchar(255) NULL,
+	remarks1 varchar(255) NULL,
+	remarks2 varchar(255) NULL,
+	remarks3 varchar(255) NULL,
+    created_date timestamp NULL,
+	created_by varchar(255) NULL,
+    updated_date timestamp NULL,
+	updated_by varchar(255) NULL,
+	CONSTRAINT payment_tracker_pkey PRIMARY KEY (id)
 );

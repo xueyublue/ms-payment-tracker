@@ -1,10 +1,10 @@
-package sg.darren.ms.event.tracker;
+package sg.darren.ms.payment.tracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsApplicationTests {
+class PaymentTrackerApplicationTests {
 
 	@Test
 	void contextLoads() {
